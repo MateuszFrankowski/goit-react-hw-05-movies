@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import Reactfrom 'react';
 //const TrendingMovies = lazy(() => import('components/Home/Home'));
 import { MovieSearch } from 'components/MovieSearch/MovieSearch';
 const Movie = () => {

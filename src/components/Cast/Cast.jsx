@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'components/AppStyled/App.styled';
+
 import css from './Cast.module.css';
 import { Options } from 'components/SearchOptions/SearchOptions';
 import { useParams } from 'react-router-dom';

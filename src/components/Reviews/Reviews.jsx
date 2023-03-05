@@ -45,7 +45,7 @@ const Reviews = () => {
           </ul>
         </>
       )}
-      {movieReviews.length === 0 && !isLoading && isFetched.current && (
+      {movieReviews.length === 0 && (
         <>
           <p>Sorry We doon't have any reviews for this movie</p>
         </>

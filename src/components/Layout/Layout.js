@@ -1,7 +1,6 @@
 import React from 'react';
 import { Suspense } from 'react';
 import { Container, Header, Link, Logo } from 'components/AppStyled/App.styled';
-import { Outlet } from 'react-router-dom';
 
 export const Layout = ({ children }) => {
   return (
