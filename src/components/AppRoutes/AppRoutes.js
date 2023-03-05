@@ -15,7 +15,7 @@ const Movie = lazy(() => import('pages/Movie'));
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path={'/'} element={<Home />} />
+      <Route exact path={'/'} element={<Home />} />
       <Route path={'/movies'} element={<Movie />} />
       <Route path={'/movies/:movieId'} element={<MovieDetails />}>
         <Route path={'cast'} element={<Cast />} />
