@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'components/AppStyled/App.styled';
+
 import { Options } from 'components/SearchOptions/SearchOptions';
 import { useParams } from 'react-router-dom';
 import { fetchMovies } from 'components/Api/Api';
