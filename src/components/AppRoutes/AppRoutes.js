@@ -1,8 +1,8 @@
 import React, { lazy } from 'react';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, redirect } from 'react-router-dom';
 import axios from 'axios';
-
+redirect('/');
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
 const Home = lazy(() => import('pages/Home'));
 const MovieDetails = lazy(() => import('pages/MovieDetails'));
