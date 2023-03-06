@@ -32,7 +32,7 @@ const Reviews = () => {
   });
   return (
     <div>
-      {movieReviews.results.length > 0 && !isLoading && isFetched.current && (
+      {movieReviews.results?.length > 0 && !isLoading && isFetched.current && (
         <>
           <ul>
             {movieReviews.results?.map((review, index) => (
@@ -45,7 +45,7 @@ const Reviews = () => {
           </ul>
         </>
       )}
-      {movieReviews.results.length === 0 && !isLoading && isFetched.current && (
+      {movieReviews.results?.length === 0 && !isLoading && isFetched.current && (
         <>
           <p>Sorry We doon't have any reviews for this movie</p>
         </>
