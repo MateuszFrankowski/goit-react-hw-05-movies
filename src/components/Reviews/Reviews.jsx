@@ -32,7 +32,7 @@ const Reviews = () => {
   });
   return (
     <div>
-      {movieReviews.results.length > 0 && !isLoading && isFetched.current && (
+      {movieReviews.results?.length > 0 && !isLoading && isFetched.current && (
         <>
           <ul>
             {movieReviews.results?.map((review, index) => (
