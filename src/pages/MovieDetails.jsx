@@ -19,7 +19,7 @@ const MovieDetails = () => {
     try {
       const fetchData = await fetchMovies(searchQuery, searchMode);
       const { data } = fetchData;
-      console.log('response', fetchData);
+
       setTrendingMovies(data);
     } catch (error) {
       console.error(error);
@@ -31,7 +31,7 @@ const MovieDetails = () => {
   useEffect(() => {
     if (!isFetched.current) {
       handleMoviesRequest(id, Options.DETAILS);
-      console.log('movieDetail', movieDetail);
+
       isFetched.current = true;
     }
   });
@@ -63,10 +63,14 @@ const MovieDetails = () => {
       <ul>
         <>Additional information</>
         <li>
-          <Link to="cast">Check the credits</Link>
+          <Link to="cast" state={{ from: location.state.from }}>
+            Check the credits
+          </Link>
         </li>
         <li>
-          <Link to="reviews">Read some rewiews...</Link>
+          <Link to="reviews" state={{ from: location.state.from }}>
+            Read some rewiews...
+          </Link>
         </li>
       </ul>
       <Outlet />
